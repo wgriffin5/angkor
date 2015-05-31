@@ -92,7 +92,11 @@ angular.module('app').controller("MainController", function(){
 
   
     
+  vm.deleteCompany = function(company) {
 
+    var index = vm.companies.indexOf(company);
+    vm.companies.splice(index, 1);
+  }
 
 
 

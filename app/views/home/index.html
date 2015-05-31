@@ -17,20 +17,19 @@
       <span class="input-group-addon">
         <span class="glyphicon glyphicon-search"></span>
       </span>
-      <input type="text" class="form-control" ng-model="main.searchInput">
+      <input type="text" class="form-control" ng-model="main.searchInput" placeholder="Search Companies List">
   </div>
   
 
-    <h3>Screened List of Companies</h3>
+    <h2>Screened List of Companies</h2>
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="company in main.companies | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-star" ng-if="company.holding"></span>{{company.name}} <span class="badge">{{company.marketCap}}</span>
-          <button ng-click="editCompany">Edit</button>
-          <button ng-click="delete($index)">Delete</button></li>
+        <li class="list-group-item" ng-repeat="company in main.companies | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon-asterisk" ng-if="company.holding"></span>{{company.name}}<a class="btn" ng-click="main.deleteCompany(company)">Delete</a><span class="badge">{{company.marketCap}}</span>
+        </li>
     </ul>
     <select class="form-control pull-right" ng-model="main.order" ng-options="order as order.name for order in main.orders"></select>
 
     <div class="clearfix"></div>
-    <h2>Add a new Company</h2>
+    <h3>Add a new Company</h3>
     <form name="main.addForm" class="form" ng-submit="main.addCompany()">
         <div class="form-group">
           <label>Name</label>
