@@ -1,4 +1,4 @@
-angular.module('app').controller("MainController", function(){
+angular.module('angkorApp').controller("MainController", function(){
 
   var vm = this;
 
