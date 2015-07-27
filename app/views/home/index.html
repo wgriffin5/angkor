@@ -21,6 +21,14 @@
 
         {{ newTicker }}
 
+
+<div ng-controller="StocksCtrl">
+  <ul>
+    <li ng-repeat="stock in stocks">
+      {{stock.symbol}}, {{stock.name}}
+    </li>
+  </ul>
+
     <div class="input-group">
       <span class="input-group-addon">
         <span class="glyphicon glyphicon-search"></span>

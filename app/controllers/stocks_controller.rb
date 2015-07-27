@@ -1,8 +1,7 @@
 class StocksController < ApplicationController
-
   respond_to :json
 
-  def index 
+  def index
     respond_with stock.all? 
   end
 
