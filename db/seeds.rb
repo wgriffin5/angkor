@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Stock.create!(symbol: 'DEPO', name: 'Depomed')
+Stock.create!(symbol: 'MNDO', name: 'Mind CTi')
+Stock.create!(symbol: 'PPC', name: 'Pilgrims Pride')
+Stock.create!(symbol: 'ONE', name: 'Higher One')
+Stock.create!(symbol: 'BRCD', name: 'Brocade')
