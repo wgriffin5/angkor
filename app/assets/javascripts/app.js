@@ -1,1 +1,1 @@
-angular.module('angkorApp', []);
+var app = angular.module('angkorApp', ['ngResource']);
