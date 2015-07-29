@@ -1,8 +1,8 @@
-app.controller('stocksCtrl', ['$scope', '$resource', function($scope, $resource)  {
+// app.controller('stocksCtrl', ['$scope', '$resource', function($scope, $resource)  {
 
-  var stocks = $resource('/api/stocks');
+//   var stocks = $resource('/api/stocks');
 
-      $scope.stocks = stocks.query();
+//       $scope.stocks = stocks.query();
 
 
-}]);
+// }]);
